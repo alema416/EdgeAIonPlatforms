@@ -1,22 +1,21 @@
 # EdgeAIonPlatforms
 
-A collection of tools, examples, and best practices for deploying AI/ML models on edge devices and IoT platforms.
+Example workflow for quantizing & compiling custom ML models on Edge Devices.
 
 ## Overview
 
-EdgeAIonPlatforms demonstrates how to take trained machine-learning models and run them efficiently on resource-constrained devices such as Raspberry Pi, NVIDIA Jetson, Coral USB TPU, and Intel Neural Compute Stick. Each platform folder contains:
+EdgeAIonPlatforms demonstrates how to take trained machine-learning models and run them efficiently on resource-constrained devices such as:
+HAILO, ORCA, CORAL Edge TPU and STM32 devices. 
 
-- **Model conversion scripts** (e.g. TensorFlow → TFLite, ONNX → OpenVINO)
-- **Runtime examples** in Python or C++
-- **Performance benchmarks** and optimization tips
+- **Model conversion scripts** (e.g. pytorch --> ONNX, ONNX → proprietary)
+- **Recommended Dockerization Strategy** so that everything is automate in a microservices format for easy scalabilty
+- **Customization Instructions** to incorporate other models in the same pipeline
 
 ## Getting Started
 
-- A compatible edge device (see **Supported Platforms** below)
-
 ### Installation
 
-1. **Clone the repo**  
+1. **Clone the repo**
    ```
    git clone https://github.com/alema416/EdgeAIonPlatforms.git
    cd EdgeAIonPlatforms
