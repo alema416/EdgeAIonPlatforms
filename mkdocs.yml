@@ -6,5 +6,13 @@ theme:
   font:
     text: Roboto       # body copy & headings
     code: Roboto Mono  # code blocks & inline code
+  palette:
+    primary:
+      main:    "#089484"
+      light:   "#089484"
+      dark:    "#089484"
+    accent:
+      main:    "#089484"
+
 plugins:
   - search
