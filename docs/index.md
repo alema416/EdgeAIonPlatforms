@@ -1,4 +1,4 @@
-# EdgeAIonPlatforms
+# Edge AI on Edge Device Hardware Platforms
 
 Example workflow for quantizing & compiling custom ML models on Edge Devices.
 
