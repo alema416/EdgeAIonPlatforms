@@ -32,16 +32,20 @@ EdgeAIonPlatforms demonstrates how to take trained machine-learning models and r
 
 #### HAILO
 
+edit configs/optimizer.yaml
+
 ```
 docker compose run --rm --entrypoint /usr/bin/bash hailo
 ```
 
 #### ST Devices
 
+edit configs/quantization_config.yaml
 ```
 docker compose run --rm stm32ai
 ```
 
+edit the corresponding .json file
 #### ORCA/CORAL devices
 
 ```
