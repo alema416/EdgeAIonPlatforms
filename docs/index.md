@@ -1,17 +1,54 @@
-# Welcome to MkDocs
+# EdgeAIonPlatforms
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+A collection of tools, examples, and best practices for deploying AI/ML models on edge devices and IoT platforms.
 
-## Commands
+## Overview
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+EdgeAIonPlatforms demonstrates how to take trained machine-learning models and run them efficiently on resource-constrained devices such as Raspberry Pi, NVIDIA Jetson, Coral USB TPU, and Intel Neural Compute Stick. Each platform folder contains:
 
-## Project layout
+- **Model conversion scripts** (e.g. TensorFlow → TFLite, ONNX → OpenVINO)
+- **Runtime examples** in Python or C++
+- **Performance benchmarks** and optimization tips
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Getting Started
+
+- A compatible edge device (see **Supported Platforms** below)
+
+### Installation
+
+1. **Clone the repo**  
+   ```
+   git clone https://github.com/alema416/EdgeAIonPlatforms.git
+   cd EdgeAIonPlatforms
+   ```
+
+2. **Build/Pull the Docker Images**
+   ```
+   docker compose build stm32ai
+   docker compose pull degirum_api hailo
+   ```
+
+### Usage
+
+#### HAILO
+
+edit configs/optimizer.yaml
+
+```
+docker compose run --rm --entrypoint /usr/bin/bash hailo
+```
+
+#### ST Devices
+
+edit configs/quantization_config.yaml
+```
+docker compose run --rm stm32ai
+```
+
+#### ORCA/CORAL devices
+
+edit the corresponding .json file
+
+```
+docker compose up -d compiler_api
+```
