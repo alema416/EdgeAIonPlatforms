@@ -1,4 +1,4 @@
-# Pipeline Customization for STM32 Devices
+# Pipeline Customization for Raspberry Pi + Orca
 
 Sample config:
 
