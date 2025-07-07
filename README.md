@@ -45,8 +45,9 @@ edit configs/quantization_config.yaml
 docker compose run --rm stm32ai
 ```
 
-edit the corresponding .json file
 #### ORCA/CORAL devices
+
+edit the corresponding .json file
 
 ```
 docker compose up -d compiler_api
