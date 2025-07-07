@@ -2,5 +2,8 @@ site_name: EdgeAIonPlatformse
 site_url: https://mydomain.org/mysite
 theme:
   name: material
+  font:
+    text: Roboto       # body copy & headings
+    code: Roboto Mono  # code blocks & inline code
 plugins:
   - search
