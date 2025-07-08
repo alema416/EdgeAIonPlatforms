@@ -18,12 +18,14 @@ HAILO, ORCA, CORAL Edge TPU and STM32 devices.
 1. **Clone the repo**
    ```
    git clone https://github.com/alema416/EdgeAIonPlatforms.git
+
    cd EdgeAIonPlatforms
    ```
 
 2. **Build/Pull the Docker Images**
    ```
    docker compose build stm32ai
+
    docker compose pull degirum_api hailo
    ```
 
